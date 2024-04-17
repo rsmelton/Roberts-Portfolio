@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/hero.css">
+    <link rel="stylesheet" href="./styles/components/about.css">
+    <link rel="stylesheet" href="./styles/components/featured.css">
+    <link rel="stylesheet" href="./styles/components/work.css">
+    <link rel="stylesheet" href="./styles/components/contact.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/components/mobile-nav.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+    <title>Roberts Portfolio</title>
+</head>
+<body>
+    <header class="header container">
+        <nav>
+            <ul class="header__menu">
+                <li><a class="header__link" href="#about">About</a></li>
+                <li><a class="header__link" href="#featured">Work</a></li>
+                <li><a class="header__link" href="#contact">Contact</a></li>
+                <li><a class="header__link" href="https://www.linkedin.com/in/rsmelton/">LinkedIn</a></li>
+                <li><a class="header__link" href="https://github.com/rsmelton">GitHub</a></li>
+                <li class="header__line"></li>
+                <li>
+                    <button id="theme-toggle" class="header__sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                        </svg>                          
+                    </button>
+                </li>
+                <li><a class="header__resume btn" href="/RobertsResume.pdf">Resume</a></li>
+            </ul>
+            <button class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                </svg>                  
+            </button>
+        </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <nav>
+           <ul class="mobile-nav__menu">
+                <li>
+                    <a class="mobile-nav__link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#featured">Work</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="https://www.linkedin.com/in/rsmelton/">LinkedIn</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="https://github.com/rsmelton">GitHub</a>
+                </li>
+                <li class="mobile-nav__link-line"></li>
+                <li>                    
+                    <button id="theme-toggle" class="mobile-nav__sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                        </svg>                          
+                    </button></li>
+                <li>
+                    <a class="mobile-nav__btn btn" href="/RobertsResume.pdf">Resume</a>
+                </li>
+           </ul> 
+        </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+        <section class="hero container">
+            <img class="hero__img" src="./public/mypicture.jpg" alt="Profile Picture">
+            <h2 class="hero__subtitle">Hi, I'm Robert 👋</h2>
+            <h1 class="hero__title">Front-End <br> Web Developer</h1>
+            <p class="hero__description"><strong>Frontend Web Developer</strong> passionate about building beautiful <strong>responsive websites</strong> that allow for an amazing <strong>user experience</strong>.</p>
+            <a class="hero__btn btn" href="mailto:r.scott.melton@gmail.com">Reach out</a>
+        </section>
+        <section id="about" class="about container section">
+            <div class="about__content">
+                <h2 class="about__title">About</h2>
+                <p class="about__description">Hi there! I'm Robert and I am a <strong>Frontend Developer</strong> located in Alabama. What my day consists of is going to the gym, getting coffee, and then opening my laptop to work on the current project that I am working on or the new tech that I am learning. </p>
+                <p class="about__description">The people that know me say that I am <strong>hard working</strong> and always <strong>willing</strong> and <strong>eager</strong> to learn something new.</p>
+                <p class="about__description">My goal is to work somewhere that allows me to build <strong>clean</strong> and <strong>concise</strong> responsive websites for the frontend of the development process.</p>
+                <hr class="about__hr">
+                <h3 class="about__subtitle">Technologies</h3>
+                <div class="about__technologies__container">
+                    <ul class="about__technologies">
+                        <li class="about__technology">JavaScript</li>
+                        <li class="about__technology">HTML</li>
+                        <li class="about__technology">CSS</li>
+                    </ul>
+                    <ul class="about__technologies">
+                        <li class="about__technology">React</li>
+                        <li class="about__technology">VS Code</li>
+                        <li class="about__technology">Git</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about__img__wrapper">
+                <img class="about__img lazy loading" src="https://fakeimg.pl/1090x1374" data-src="/MeandRunt.jpg" alt="About Picture">
+            </div>
+        </section>
+        <section id="featured" class="featured container section">
+            <h3 class="featured__subtitle">Featured Project</h3>
+            <div class="featured__wrapper">
+                <h2 class="featured__title">Document Generator</h2>
+                <a class="featured__link" href="https://uagradschooldocgenerator.web.app">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>                  
+                </a>
+            </div>
+            <p class="featured__description">During my last semester of college, me and a team of three others worked over the semester to build this document generator in React for The University of Alabama Grad School. This application essentially makes the process of gathering all the information that is needed from the grad student simpler.</p>
+            <div class="featured__info-container">
+                <div>
+                    <h3 class="featured__label">Tech Stack</h3>
+                    <ul class="featured__tech-stack">
+                        <li class="featured__info">CSS</li>
+                        <li class="featured__info">React</li>
+                        <li class="featured__info">Firebase</li>
+                        <li class="featured__info">Material UI</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="featured__label">Project Type</h3>
+                    <p class="featured__info">React Web Application</p>
+                </div>
+                <div>
+                    <h3 class="featured__label">Timeline</h3>
+                    <p class="featured__info">August 2023 - December 2023</p>
+                </div>
+            </div>
+            <div class="featured__img-container">
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/1.png" alt="Step 1">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/2.png" alt="Step 2">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/3.png" alt="Step 3">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/4.png" alt="Step 4">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/5.png" alt="Step 5">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/6.png" alt="Step 6">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/7.png" alt="Step 7">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/8.png" alt="Step 8">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/9.png" alt="Step 9">
+                </div>
+                <div class="featured__img-wrapper">
+                    <img class="lazy loading" src="https://fakeimg.pl/2880x1800" data-src="/UA_DocGeneratorPhotos/10.png" alt="Step 10">
+                </div>
+            </div>
+        </section>
+        <section class="work container section">
+            <h2 class="work__title">Projects</h2>
+            <p class="work__description">Below I will display projects that I have completed in JavaScript and React.</p>
+            <div class="work__container">
+                <!-- Project 1 -->
+                <h3 class="work__project-title">Project 1</h3>
+                <div class="work__img-wrapper work__image1">
+                    <img class="lazy loading" src="https://fakeimg.pl/1620x1430" data-src="/OldPortfolio.jpg" alt="Project 1">
+                </div>
+                <div class="work__project work__content1">
+                    <h3 class="work__project-subtitle">Old Portfolio</h3>
+                    <p class="work__project-description1">This projects purpose was to learn about React while also creating my first portfolio. I ended up wanting to make another portfolio that was beautiful and responsive so I replaced this old portfolio with this new portfolio.</p>
+                    <!-- <p class="work__project-description2">Lorem, ipsum dolor sit amet consecte.</p> -->
+                    <a class="btn work__project-btn" href="https://robertsportfolio-ef9e0.web.app">Website</a>
+                </div>
+                <!-- Project 2 -->
+                <!-- <h3 class="work__project-title">Project 2</h3>
+                <div class="work__img-wrapper work__image2">
+                    <img class="lazy loading" src="https://fakeimg.pl/1280x960" data-src="./public/mypicture.jpg" alt="Project 2">
+                </div>
+                <div class="work__project work__content2">
+                    <h3 class="work__project-subtitle">Project 2</h3>
+                    <p class="work__project-description1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquam voluptatem numquam ut optio accusantium labore magni, eligendi debitis culpa fuga animi voluptates quidem deserunt doloribus impedit sint quas. Dolorum.</p>
+                    <p class="work__project-description2">Lorem, ipsum dolor sit amet consectet</p>
+                    <a class="btn work__project-btn" href="#">Website</a>
+                </div> -->
+            </div>
+        </section>
+        <section id="contact" class="contact container section">
+            <h2 class="contact__title">Get in Contact</h2>
+            <p class="contact__description">Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.</p>
+            <a class="contact__btn btn" href="mailto:r.scott.melton@gmail.com" target="_blank">Reach out</a>
+        </section>
+    </main>
+    <footer class="footer container section">
+        <h3 class="footer__title">~ Robert Melton ~</h3>
+    </footer>
+    <script src="./src/script.js" type="module"></script>
+    <script src="./src/utils/mobile-nav.js"></script>
+</body>
+</html>

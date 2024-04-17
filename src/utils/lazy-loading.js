@@ -1,0 +1,20 @@
+const lazyLoader = () => {
+    const lazyImgs = document.querySelectorAll('.lazy');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.replace('loading', 'loaded');
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+    
+    lazyImgs.forEach(img => {
+        observer.observe(img);
+    });
+};
+
+export default lazyLoader;
